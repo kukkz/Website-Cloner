@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en-GB">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Log In ‹ Meridian Trust — WordPress</title>
+<style type="text/css">
+	body {
+		background: #F7F7F7;
+	}
+	#login h1 a,
+	.login h1 a {
+		background: url('https://www.meridiantrust.co.uk/wp-content/themes/cmatrust/inc/img/CMAT-logo.svg');
+		width: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+	#login p{
+		text-align: center;
+	}
+	.login #backtoblog a, .login #nav a {
+		text-decoration: none;
+		color: #09486f !important;
+	}
+	a {
+		color: #09486f !important;
+	}
+	.dm-login-link {
+		margin: 0 auto !important;
+		display: block;
+		max-width: 120px;
+		width: 100%;
+		opacity:.5;
+		transition:opacity .35s ease;
+	}
+	a.dm-logo-link-wrapper:hover .dm-login-link{
+		transition:opacity .35s ease;
+		opacity:1;
+	}
+</style>
+<meta content="noindex, follow" name="robots"/>
+<script id="dm-login-js-js" src="https://www.meridiantrust.co.uk/wp-content/themes/cmatrust/inc/js/dm-login.js?ver=6.4.3" type="text/javascript"></script>
+<link href="https://www.meridiantrust.co.uk/wp-includes/css/dashicons.min.css?ver=6.4.3" id="dashicons-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.meridiantrust.co.uk/wp-includes/css/buttons.min.css?ver=6.4.3" id="buttons-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.meridiantrust.co.uk/wp-admin/css/forms.min.css?ver=6.4.3" id="forms-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.meridiantrust.co.uk/wp-admin/css/l10n.min.css?ver=6.4.3" id="l10n-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.meridiantrust.co.uk/wp-admin/css/login.min.css?ver=6.4.3" id="login-css" media="all" rel="stylesheet" type="text/css"/>
+<meta content="strict-origin-when-cross-origin" name="referrer"/>
+<meta content="width=device-width" name="viewport"/>
+<link href="https://www.meridiantrust.co.uk/wp-content/uploads/2022/03/cropped-Flaticon-32x32.png" rel="icon" sizes="32x32"/>
+<link href="https://www.meridiantrust.co.uk/wp-content/uploads/2022/03/cropped-Flaticon-192x192.png" rel="icon" sizes="192x192"/>
+<link href="https://www.meridiantrust.co.uk/wp-content/uploads/2022/03/cropped-Flaticon-180x180.png" rel="apple-touch-icon"/>
+<meta content="https://www.meridiantrust.co.uk/wp-content/uploads/2022/03/cropped-Flaticon-270x270.png" name="msapplication-TileImage"/>
+</head>
+<body class="login no-js login-action-login wp-core-ui locale-en-gb">
+<script type="text/javascript">
+/* <![CDATA[ */
+document.body.className = document.body.className.replace('no-js','js');
+/* ]]> */
+</script>
+<div id="login">
+<h1><a href="https://www.meridiantrust.co.uk">Meridian Trust</a></h1>
+<form action="https://www.meridiantrust.co.uk/wp-login.php" id="loginform" method="post" name="loginform">
+<p>
+<label for="user_login">Username or Email Address</label>
+<input autocapitalize="off" autocomplete="username" class="input" id="user_login" name="log" required="required" size="20" type="text" value=""/>
+</p>
+<div class="user-pass-wrap">
+<label for="user_pass">Password</label>
+<div class="wp-pwd">
+<input autocomplete="current-password" class="input password-input" id="user_pass" name="pwd" required="required" size="20" spellcheck="false" type="password" value=""/>
+<button aria-label="Show password" class="button button-secondary wp-hide-pw hide-if-no-js" data-toggle="0" type="button">
+<span aria-hidden="true" class="dashicons dashicons-visibility"></span>
+</button>
+</div>
+</div>
+<p class="forgetmenot"><input id="rememberme" name="rememberme" type="checkbox" value="forever"/> <label for="rememberme">Remember Me</label></p>
+<p class="submit">
+<input class="button button-primary button-large" id="wp-submit" name="wp-submit" type="submit" value="Log In"/>
+<input name="redirect_to" type="hidden" value="https://www.meridiantrust.co.uk/wp-admin/"/>
+<input name="testcookie" type="hidden" value="1"/>
+</p>
+</form>
+<p id="nav">
+<a class="wp-login-lost-password" href="https://www.meridiantrust.co.uk/wp-login.php?action=lostpassword">Lost your password?</a> </p>
+<script type="text/javascript">
+/* <![CDATA[ */
+function wp_attempt_focus() {setTimeout( function() {try {d = document.getElementById( "user_login" );d.focus(); d.select();} catch( er ) {}}, 200);}
+wp_attempt_focus();
+if ( typeof wpOnload === 'function' ) { wpOnload() }
+/* ]]> */
+</script>
+<p id="backtoblog">
+<a href="https://www.meridiantrust.co.uk/">← Go to Meridian Trust</a> </p>
+<div class="privacy-policy-page-link"><a class="privacy-policy-link" href="https://www.meridiantrust.co.uk/privacy-policy/" rel="privacy-policy">Privacy and Cookies</a></div> </div>
+<div class="language-switcher">
+<form action="" id="language-switcher" method="get">
+<label for="language-switcher-locales">
+<span aria-hidden="true" class="dashicons dashicons-translation"></span>
+<span class="screen-reader-text">
+							Language						</span>
+</label>
+<select id="language-switcher-locales" name="wp_lang"><option data-installed="1" lang="en" value="en_US">English (United States)</option>
+<option data-installed="1" lang="en" selected="selected" value="en_GB">English (UK)</option></select>
+<input class="button" type="submit" value="Change"/>
+</form>
+</div>
+<script id="jquery-core-js" src="https://www.meridiantrust.co.uk/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" type="text/javascript"></script>
+<script id="jquery-migrate-js" src="https://www.meridiantrust.co.uk/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" type="text/javascript"></script>
+<script id="zxcvbn-async-js-extra" type="text/javascript">
+/* <![CDATA[ */
+var _zxcvbnSettings = {"src":"https:\/\/www.meridiantrust.co.uk\/wp-includes\/js\/zxcvbn.min.js"};
+/* ]]> */
+</script>
+<script id="zxcvbn-async-js" src="https://www.meridiantrust.co.uk/wp-includes/js/zxcvbn-async.min.js?ver=1.0" type="text/javascript"></script>
+<script id="wp-polyfill-inert-js" src="https://www.meridiantrust.co.uk/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" type="text/javascript"></script>
+<script id="regenerator-runtime-js" src="https://www.meridiantrust.co.uk/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0" type="text/javascript"></script>
+<script id="wp-polyfill-js" src="https://www.meridiantrust.co.uk/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" type="text/javascript"></script>
+<script id="wp-hooks-js" src="https://www.meridiantrust.co.uk/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1" type="text/javascript"></script>
+<script id="wp-i18n-js" src="https://www.meridiantrust.co.uk/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef" type="text/javascript"></script>
+<script id="wp-i18n-js-after" type="text/javascript">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script id="password-strength-meter-js-extra" type="text/javascript">
+/* <![CDATA[ */
+var pwsL10n = {"unknown":"Password strength unknown","short":"Very weak","bad":"Weak","good":"Medium","strong":"Strong","mismatch":"Mismatch"};
+/* ]]> */
+</script>
+<script id="password-strength-meter-js-translations" type="text/javascript">
+/* <![CDATA[ */
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2024-01-30 17:36:08+0000","generator":"GlotPress\/4.0.0-beta.2","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"en_GB"},"%1$s is deprecated since version %2$s! Use %3$s instead. Please consider writing more inclusive code.":["%1$s is deprecated since version %2$s! Use %3$s instead. Please consider writing more inclusive code."]}},"comment":{"reference":"wp-admin\/js\/password-strength-meter.js"}} );
+/* ]]> */
+</script>
+<script id="password-strength-meter-js" src="https://www.meridiantrust.co.uk/wp-admin/js/password-strength-meter.min.js?ver=6.4.3" type="text/javascript"></script>
+<script id="underscore-js" src="https://www.meridiantrust.co.uk/wp-includes/js/underscore.min.js?ver=1.13.4" type="text/javascript"></script>
+<script id="wp-util-js-extra" type="text/javascript">
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script id="wp-util-js" src="https://www.meridiantrust.co.uk/wp-includes/js/wp-util.min.js?ver=6.4.3" type="text/javascript"></script>
+<script id="user-profile-js-extra" type="text/javascript">
+/* <![CDATA[ */
+var userProfileL10n = {"user_id":"0","nonce":"c74b265df8"};
+/* ]]> */
+</script>
+<script id="user-profile-js-translations" type="text/javascript">
+/* <![CDATA[ */
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2024-01-30 17:36:08+0000","generator":"GlotPress\/4.0.0-beta.2","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"en_GB"},"Your new password has not been saved.":["Your new password has not been saved."],"Hide":["Hide"],"Show":["Show"],"Confirm use of weak password":["Confirm use of weak password"],"Hide password":["Hide password"],"Show password":["Show password"]}},"comment":{"reference":"wp-admin\/js\/user-profile.js"}} );
+/* ]]> */
+</script>
+<script id="user-profile-js" src="https://www.meridiantrust.co.uk/wp-admin/js/user-profile.min.js?ver=6.4.3" type="text/javascript"></script>
+</body>
+</html>
