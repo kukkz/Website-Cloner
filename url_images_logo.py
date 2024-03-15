@@ -1,3 +1,4 @@
+import argparse
 import requests
 from bs4 import BeautifulSoup
 import urllib.parse
@@ -44,8 +45,11 @@ def save_urls_to_file(urls, output_file):
             f.write(url + '\n')
 
 def main():
-    domain = input("Enter the domain (e.g., example.com): ")
-    url = f"https://{domain}"
+    parser = argparse.ArgumentParser(description="Extract logo URLs from a website")
+    parser.add_argument("-d", "--domain", help="Domain name of the website (e.g., example.com)", required=True)
+    args = parser.parse_args()
+
+    url = f"https://{args.domain}"
 
     website_content = get_website_content(url)
     if website_content is None:
@@ -56,7 +60,7 @@ def main():
     output_file = 'logo_urls.txt'
     save_urls_to_file(logo_urls, output_file)
 
-    print(f"All logo URLs from {domain} saved to {output_file}")
+    print(f"All logo URLs from {args.domain} saved to {output_file}")
 
 if __name__ == "__main__":
     main()
