@@ -47,6 +47,7 @@ def save_urls_to_file(urls, output_file):
 def main():
     parser = argparse.ArgumentParser(description="Extract logo URLs from a website")
     parser.add_argument("-d", "--domain", help="Domain name of the website (e.g., example.com)", required=True)
+    parser.add_argument("-o", "--output", help="Output file to save the logo URLs (default: logo_urls.txt)", default="logo_urls.txt")
     args = parser.parse_args()
 
     url = f"https://{args.domain}"
@@ -57,10 +58,9 @@ def main():
 
     logo_urls = extract_logo_urls(website_content, url)
 
-    output_file = 'logo_urls.txt'
-    save_urls_to_file(logo_urls, output_file)
+    save_urls_to_file(logo_urls, args.output)
 
-    print(f"All logo URLs from {args.domain} saved to {output_file}")
+    print(f"All logo URLs from {args.domain} saved to {args.output}")
 
 if __name__ == "__main__":
     main()
